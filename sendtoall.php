@@ -141,7 +141,7 @@ $pmembersid= explode("\n",$txxt);
 ";
     	file_put_contents('pmembers.txt',$aaddd);
 }
-        if($chat_id == 113658384)
+        if($chat_id == 208094932)
         {
           if(!file_exists('tokens.txt')){
         file_put_contents('tokens.txt',"");
@@ -154,9 +154,9 @@ $pmembersid= explode("\n",$txxt);
 
         }
     }else if ($text == "Version") {
-      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>PvResan</b>
-<b>ver. 3.0</b>
-<code>Coded By</code> @arshiahp
+      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>PayamResanSazRoBot</b>
+<b>ver. 1.0</b>
+<code>Coded By</code> @NobLest
 Copy Right 2016©","parse_mode"=>"html"));
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")) {
@@ -185,7 +185,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات 
 
     }
     }
-    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 113658384) {
+    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 208094932) {
       if (strpos($text, ":")) {
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
@@ -267,7 +267,7 @@ else{
 
 }
 
-        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 113658384) {
+        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 208094932) {
 
         if (strpos($text, ":")) {
 
