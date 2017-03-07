@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '298990906:AAEV2fwY69fTHY97S90kApGpJLtCuY03RLU');
+define('BOT_TOKEN', '325452393:AAEp0-zG2lsNze2augZ4728QbMgs3SOIlTE');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -120,7 +120,7 @@ function processMessage($message) {
   if (isset($message['text'])) {
     // incoming text message
     $text = $message['text'];
-    $admin = 208094932;
+    $admin = 292468367;
     $matches = explode(' ', $text);
     $substr = substr($text, 0,7 );
     if (strpos($text, "/start") === 0) {
@@ -141,7 +141,7 @@ $pmembersid= explode("\n",$txxt);
 ";
     	file_put_contents('pmembers.txt',$aaddd);
 }
-        if($chat_id == 208094932)
+        if($chat_id == $admin)
         {
           if(!file_exists('tokens.txt')){
         file_put_contents('tokens.txt',"");
@@ -156,8 +156,8 @@ $pmembersid= explode("\n",$txxt);
     }else if ($text == "Version") {
       apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>PayamResanSazRoBot</b>
 <b>ver. 3.0</b>
-<code>Coded By</code> @NobLest
-Copy Right 2016©","parse_mode"=>"html"));
+<code>Coded By</code> @Mrbeta
+Copy Right 2017©","parse_mode"=>"html"));
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")) {
 
@@ -179,13 +179,13 @@ Copy Right 2016©","parse_mode"=>"html"));
         $phptext = str_replace("**ADMIN**",$chat_id,$phptext);
         file_put_contents($id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[1].'$texttwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://pmresan3-resanmmm.rhcloud.com/Launcher.php'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://geolink-morphin.rhcloud.com/Launcher.php'.$chat_id.'/pvresan.php');
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات شما با مـوفقیت آپدیت شد ♻️"));
 
 
     }
     }
-    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 208094932) {
+    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != $admin) {
       if (strpos($text, ":")) {
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
@@ -222,7 +222,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
  https://telegram.me/storebot?start=PayamResanSaRoBot
 .";
 
-    $bot_url    = "https://api.telegram.org/bot298990906:AAEV2fwY69fTHY97S90kApGpJLtCuY03RLU/";
+    $bot_url    = "https://api.telegram.org/bot325452393:AAEp0-zG2lsNze2augZ4728QbMgs3SOIlTE/";
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ;
 
 $post_fields = array('chat_id'   => $chat_id,
@@ -254,7 +254,7 @@ $output = curl_exec($ch);
 🔸ربات دوم = 5000ت ✔️
 
 🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
-🚀 @NobLest"));
+🚀 @mrbeta"));
       }
     }
 
@@ -267,7 +267,7 @@ else{
 
 }
 
-        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 208094932) {
+        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == $admin) {
 
         if (strpos($text, ":")) {
 
@@ -299,12 +299,12 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         $phptext = str_replace("**ADMIN**",$matches[1],$phptext);
         file_put_contents($token.$id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://pmresan3-resanmmm.rhcloud.com/Launcher.php'.$id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://geolink-morphin.rhcloud.com/Launcher.php'.$id.'/pvresan.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀
 برای ورود به ربات خود کلیک کنید 👇😃
 ";
 
-    $bot_url    = "https://api.telegram.org/bot298990906:AAEV2fwY69fTHY97S90kApGpJLtCuY03RLU/";
+    $bot_url    = "https://api.telegram.org/bot325452393:AAEp0-zG2lsNze2augZ4728QbMgs3SOIlTE/";
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ;
 
 $post_fields = array('chat_id'   => $chat_id,
@@ -331,7 +331,7 @@ $output = curl_exec($ch);
 🔸ربات دوم = 5000ت ✔️
 
 🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
-🚀 @NobLest"));
+🚀 @Mrbeta));
       }
 
     }
